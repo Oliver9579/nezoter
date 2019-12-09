@@ -22,11 +22,21 @@ public class Chair {
         return number;
     }
 
-    public Category getCategory() {
-        return category;
+
+    public int getPrice(){
+        return category.getPrice();
     }
 
     public boolean isOccupied() {
         return occupied;
+    }
+
+    public boolean findChair(int row, int number){
+        return this.row == row && this.number == number;
+    }
+
+    @Override
+    public String toString() {
+        return occupied ? "x" : String.valueOf(category.getId());
     }
 }
