@@ -21,7 +21,7 @@ public enum Category {
 
     public static Category byId(int id) {
         return Arrays.stream(Category.values())
-                .filter(i -> i.getId()==id)
+                .filter(i -> i.getId() == id)
                 .findAny()
                 .get();
     }

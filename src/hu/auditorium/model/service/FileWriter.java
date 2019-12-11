@@ -14,7 +14,7 @@ public class FileWriter {
         this.fileName = fileName;
     }
 
-    public void write(List<String> lines){
+    public void write(List<String> lines) {
         try {
             Files.write(Paths.get(fileName), lines);
         } catch (IOException e) {

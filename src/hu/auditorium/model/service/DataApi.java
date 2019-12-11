@@ -14,7 +14,7 @@ public class DataApi {
         this.dataParser = dataParser;
     }
 
-    public List<Chair> getChairs(String occupation, String category){
+    public List<Chair> getChairs(String occupation, String category) {
         return dataParser.parse(fileReader.read(occupation), fileReader.read(category));
     }
 }

@@ -22,8 +22,12 @@ public class Chair {
         return number;
     }
 
+    public int getCategoryId() {
+        return category.getId();
+    }
 
-    public int getPrice(){
+
+    public int getPrice() {
         return category.getPrice();
     }
 
@@ -31,12 +35,12 @@ public class Chair {
         return occupied;
     }
 
-    public boolean findChair(int row, int number){
+    public boolean findChair(int row, int number) {
         return this.row == row && this.number == number;
     }
 
     @Override
     public String toString() {
-        return occupied ? "x" : String.valueOf(category.getId());
+        return occupied ? "x" : String.valueOf(getCategoryId());
     }
 }
